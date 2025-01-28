@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoodGamer - Empresa de Juegos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="https://assets-prd.ignimgs.com/2023/06/22/1x1-supermariobroswonder-1687454112497.jpg  ponme esta imagen en el inicio de la pagina al lado izquierdo">
+
+    <!-- Encabezado -->
+    <header>
+        
+        <!-- Logo -->
+        <div class="logo-container">
+            <img src="https://media.tenor.com/AOG7to94Rt8AAAAM/mario.gif" alt="GoodGamer Logo" class="logo">
+            <div class="logo-icon">
+            
+            </div>
+            <div class="logo-text">
+                Good<span>Gamer</span>
+            </div>
+        </div>
+
+        <!-- Barra de búsqueda -->
+        <div class="search-container">
+            <input type="text" placeholder="Buscar juegos..." id="searchInput">
+            <button onclick="search()">Buscar</button>
+        </div>
+
+        <!-- Iconos de redes sociales -->
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" class="fab fa-facebook"></a>
+            <a href="https://instagram.com" target="_blank" class="fab fa-instagram"></a>
+            <a href="https://tiktok.com" target="_blank" class="fab fa-tiktok"></a>
+        </div>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <a href="#home">Inicio</a>
+        <a href="#games">Juegos</a>
+        <a href="#about">Sobre nosotros</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    <!-- Nuevo Carousel -->
+    <div class="carousel">
+        <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="mario 1.jpg" alt="Mario Bros">
+            </div>
+            <div class="carousel-slide">
+                <img src="mario 2.jpg" alt="Mario Wonder">
+            </div>
+            <div class="carousel-slide">
+                <img src="https://i.pinimg.com/736x/7f/78/22/7f78227f907e40243430771972aaa7f0.jpg" alt="Mario Kart">
+            </div>
+        </div>
+        <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
+        <div class="carousel-dots"></div>
+    </div>
+
+    <!-- Contenido principal de mi pagina -->
+    <main>
+        <section id="home">
+            <h1>Bienvenido a GoodGamer</h1>
+            <p>GoodGamer es una empresa de videojuegos que se dedica a la creación de juegos de entretenimiento para todas las edades. Nuestros juegos son divertidos, emocionantes y desafiantes. ¡Descubre el mundo de GoodGamer y diviértete jugando!</p>
+        <div class="main-container">
+            <div class="main-image">
+                <img src="https://assets-prd.ignimgs.com/2023/06/22/1x1-supermariobroswonder-1687454112497.jpg" alt="Super Mario Bros Wonder">
+            </div>
+            <div class="main-content">
+                <h2>Bienvenido a GoodGamer</h2>
+                <div class="story-box">
+                    <h3>Historia del Juego</h3>
+                    <p>La historia del juego sigue a Mario y sus amigos en su viaje al Reino de las Flores. Después de un ataque de Bowser, el jugador recibe la ayuda de El Príncipe, que es lindo pero no memorable debido a la falta de caracterización, mientras intentan salvar su reino recolectando Wonder Seeds.</p>
+                    <source media="(https://youtu.be/OlFl65Jo16A?t=31)" srcset="">
+                </div>
+                <div class="video-container">
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/OlFl65Jo16A?start=31" 
+                        title="Super Mario Bros Wonder Gameplay" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section id="games">
+            <h2>Nuestros Juegos</h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <img src="https://i.pinimg.com/736x/f5/e5/b9/f5e5b9b2ef121dfd98f76783de8b7b9f.jpg" alt="Mario Bros Wonder">
+                    <h3>Super Mario Party Jamboree</h3>
+                    <p>El nuevo juego de plataformas 2D de Mario.</p>
+                    <img src="https://i.pinimg.com/736x/c6/78/dc/c678dcb2294ad8eda4fa18790863621c.jpg" alt="Mario Bros Wonder">
+                    <h3>Super Mario Galaxi</h3>
+                    <p>El protagonista intenta salvar a la princesa del malvado Bowser.</p>
+                    <img src="https://i.pinimg.com/736x/4e/3e/1b/4e3e1bc0a0fdfcfe0627d45e06c04980.jpg" alt="Mario Bros Wonder">
+                    <h3> Mario Golf</h3>
+                    <p></p>
+                </div>
+                <div class="game-card">
+                    <img src="https://i.pinimg.com/736x/6d/c4/84/6dc484330a2405adf93fb2d9906d11d5.jpg" alt="Mario Kart 8">
+                    <h3>Mario Kart 8 Deluxe</h3>
+                    <p>Carreras llenas de diversión y emoción.</p>
+                    <img src="https://i.pinimg.com/736x/aa/38/64/aa3864b6ffff42758ac8ff6b7be7303c.jpg" alt="Mario Kart 8">
+                    <h3>Super Mario Odyssey</h3>
+                    <p>Un maravilloso retorno a la infancia.</p> 
+                    <img src="https://i.pinimg.com/736x/aa/2e/35/aa2e35c7fa5593dc9d126e7a3c906c5b.jpg" alt="Mario Kart 8">
+                    <h3>Super Mario World</h3>
+                    <p>.</p>
+                </div>
+
+
+                <!-- Puedes agregar más tarjetas de juegos aquí -->
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>Sobre Nosotros</h2>
+            <div class="about-container">
+                <div class="about-content">
+                    <h3>Nuestra Misión</h3>
+                    <p>Crear experiencias únicas de juego que inspiran y entretienen a jugadores de todas las edades.</p>
+                    <h3>Nuestra Visión</h3>
+                    <p>Ser líderes en la industria de videojuegos, innovando constantemente y creando momentos memorables.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <div class="contact-container">
+                <form class="contact-form">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Mensaje" rows="5" required></textarea>
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <p><i class="fas fa-envelope"></i> info@goodgamer.com</p>
+                    <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                    <p><i class="fas fa-location-dot"></i> Ciudad Gaming, CP 12345</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
