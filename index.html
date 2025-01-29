@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GoodGamer - Tu destino para los mejores juegos">
+    <meta name="theme-color" content="#1478eb">
     <title>GoodGamer - Empresa de Juegos</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Precargar recursos críticos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous" defer>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <img src="https://assets-prd.ignimgs.com/2023/06/22/1x1-supermariobroswonder-1687454112497.jpg  ponme esta imagen en el inicio de la pagina al lado izquierdo">
-
+    
     <!-- Encabezado -->
     <header>
         
@@ -27,8 +34,17 @@
 
         <!-- Barra de búsqueda -->
         <div class="search-container">
-            <input type="text" placeholder="Buscar juegos..." id="searchInput">
-            <button onclick="search()">Buscar</button>
+            <form action="https://www.nintendo.com/es-co/store/games/" method="GET" class="search-form" onsubmit="search(event)">
+                    <input type="text" id="searchInput" name="query" class="search-bar" placeholder="Buscar..." required>
+                <div class="search-wrapper">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" name="query" placeholder="¿Qué juego buscas?" required>
+                    <button type="submit">
+                        <span class="button-text">Buscar</span>
+                        <i class="fas fa-gamepad"></i>
+                    </button>
+                </div>
+            </form>
         </div>
 
         <!-- Iconos de redes sociales -->
@@ -41,13 +57,38 @@
 
     <!-- Menú de navegación -->
     <nav>
-        <a href="#home">Inicio</a>
-        <a href="#games">Juegos</a>
-        <a href="#about">Sobre nosotros</a>
-        <a href="#contact">Contacto</a>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="#home">Inicio</a>
+            <a href="#games">Juegos</a>
+            <a href="#about">Sobre nosotros</a>
+            <a href="#contact">Contacto</a>
+        </div>
     </nav>
 
-    
+    <!-- Nuevo Carousel mejorado -->
+    <div class="carousel">
+        
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="https://i.pinimg.com/736x/82/21/d4/8221d43cad9b6c17ce3f9e261c5d7038.jpg">
+            </div>
+            <div class="carousel-slide">
+                <img src="https://i.pinimg.com/736x/d9/9b/05/d99b05e26d53b4bdee90bf7ca4f64844.jpg">
+            </div>
+            <div class="carousel-slide">
+                <img src="https://i.pinimg.com/736x/29/4d/b6/294db6565f83b4f851cc304e34732f30.jpg">
+            </div>
+        </div>
+        
+        <div class="carousel-dots"></div>
+    </div>
 
     <!-- Contenido principal de mi pagina -->
     <main>
@@ -84,26 +125,38 @@
             <h2>Nuestros Juegos</h2>
             <div class="games-grid">
                 <div class="game-card">
+                    <a href="https://youtu.be/_PkWmHVxTWM" target="_blank">
                     <img src="https://i.pinimg.com/736x/f5/e5/b9/f5e5b9b2ef121dfd98f76783de8b7b9f.jpg" alt="Mario Bros Wonder">
+                    </a>
                     <h3>Super Mario Party Jamboree</h3>
                     <p>El nuevo juego de plataformas 2D de Mario.</p>
+                    <a href="https://youtu.be/qNHcxV4VGWo" target="_blank">
                     <img src="https://i.pinimg.com/736x/c6/78/dc/c678dcb2294ad8eda4fa18790863621c.jpg" alt="Mario Bros Wonder">
+                    </a>
                     <h3>Super Mario Galaxi</h3>
                     <p>El protagonista intenta salvar a la princesa del malvado Bowser.</p>
+                    <a href="https://youtu.be/J9W0cnwz40k" target="_blank">
                     <img src="https://i.pinimg.com/736x/4e/3e/1b/4e3e1bc0a0fdfcfe0627d45e06c04980.jpg" alt="Mario Bros Wonder">
+                    </a>
                     <h3> Mario Golf</h3>
                     <p></p>
                 </div>
                 <div class="game-card">
+                    <a href="https://youtu.be/vT4q6-G54s0" target="_blank">
                     <img src="https://i.pinimg.com/736x/6d/c4/84/6dc484330a2405adf93fb2d9906d11d5.jpg" alt="Mario Kart 8">
+                    </a>
                     <h3>Mario Kart 8 Deluxe</h3>
                     <p>Carreras llenas de diversión y emoción.</p>
+                    <a href="https://youtu.be/CzzvOv8Scx4" target="_blank">
                     <img src="https://i.pinimg.com/736x/aa/38/64/aa3864b6ffff42758ac8ff6b7be7303c.jpg" alt="Mario Kart 8">
+                    </a>
                     <h3>Super Mario Odyssey</h3>
                     <p>Un maravilloso retorno a la infancia.</p> 
+                    <a href="https://youtu.be/xCk0T-0Z3cU" target="_blank">
                     <img src="https://i.pinimg.com/736x/aa/2e/35/aa2e35c7fa5593dc9d126e7a3c906c5b.jpg" alt="Mario Kart 8">
+                    </a>
                     <h3>Super Mario World</h3>
-                    <p>.</p>
+                    <p>.</p>https://youtu.be/xCk0T-0Z3cU
                 </div>
 
 
@@ -141,5 +194,7 @@
             </div>
         </section>
     </main>
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
 </body>
 </html>
